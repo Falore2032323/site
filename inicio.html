@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEDelivery's - Compre em um Toque!</title>
+  <meta name="description"
+    content="Explore nosso catálogo interativo e encontre produtos incríveis. Compre com apenas um toque!">
+  <meta property="og:title" content="Catálogo de Produtos Incríveis" />
+  <meta property="og:description" content="Explore nosso catálogo e encontre produtos incríveis." />
+  <meta property="og:image" content="URL_DA_SUA_IMAGEM_AQUI" />
+  <meta name="keywords" content="delivery, comida, bebida, catálogo, online">
+  <meta name="author" content="Seu Nome ou Empresa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      overflow-x: hidden;
+      /* Permite a rolagem vertical, mas oculta a horizontal */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      /* Organiza os elementos em coluna */
+      background-image: linear-gradient(90deg, #ff3131, #ff914d);
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+      overflow: hidden;
+      /* Adicionei essa linha para ocultar o conteúdo que excede a altura da tela */
+    }
+
+    nav {
+      background-image: linear-gradient(to right, #ff3131, #ff914d);
+      padding: 3px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      margin-top: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    a:hover {
+      color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 400px) {
+      li {
+        margin: 0 5px;
+      }
+
+      nav a {
+        font-size: 0.8em;
+      }
+    }
+
+    /* Estilos para a seção de boas-vindas */
+    #inicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* min-height: 100vh;  Removi essa linha */
+      padding: 20px;
+      margin-top: 0px;
+    }
+
+    #inicio h1 {
+      font-size: 3em;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    #inicio p {
+      font-size: 1.2em;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para os botões das categorias */
+    .botoes-categorias {
+      display: flex;
+      justify-content: center;
+      /* Centraliza os botões horizontalmente */
+      gap: 10px;
+      /* Espaçamento entre os botões */
+      margin-bottom: 20px;
+    }
+
+    .botoes-categorias button {
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      /* Reduz o padding para botões menores */
+      font-size: 1em;
+      /* Reduz o tamanho da fonte */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botoes-categorias button:hover {
+      background-color: #ff3131;
+    }
+
+
+    #inicio a img {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="inicio">
+    <h1>Bem-vindo ao FEDelivery's!</h1>
+    <p>O QUE VAI SER HOJE?</p>
+    <div class="botoes-categorias">
+      <a href="cerveja.html">
+        <button>CERVEJA</button>
+      </a>
+      <a href="copao.html">
+        <button>COPÃO</button>
+      </a>
+      <a href="gelo.html">
+        <button>GELO</button>
+      </a>
+      <a href="petiscos.html">
+        <button>PETISCOS</button>
+      </a>
+    </div>
+    <a href="https://wa.me/+5514997008728" target="_blank">
+      <img src="whatsapp-logo.png" alt="WhatsApp">
+    </a>
+  </section>
+
+  <script>
+    function adicionarMenu() {
+      var nav = document.createElement("nav");
+      var ul = document.createElement("ul");
+
+      var li1 = document.createElement("li");
+      var a1 = document.createElement("a");
+      a1.href = "inicio.html";
+      a1.textContent = "INICIO";
+      li1.appendChild(a1);
+
+      var li2 = document.createElement("li");
+      var a2 = document.createElement("a");
+      a2.href = "copao.html"; // Corrigido
+      a2.textContent = "COPÃO";
+      li2.appendChild(a2);
+
+      var li3 = document.createElement("li");
+      var a3 = document.createElement("a");
+      a3.href = "#secao3"; // ou "cervejas.html" se for uma página separada
+      a3.textContent = "CERVEJAS";
+      li3.appendChild(a3);
+
+      var li4 = document.createElement("li");
+      var a4 = document.createElement("a");
+      a4.href = "#secao4"; // ou "petiscos.html" se for uma página separada
+      a4.textContent = "PETISCOS";
+      li4.appendChild(a4);
+
+      ul.appendChild(li1);
+      ul.appendChild(li2);
+      ul.appendChild(li3);
+      ul.appendChild(li4);
+
+      nav.appendChild(ul);
+
+      document.body.insertBefore(nav, document.body.firstChild);
+    }
+
+    if (window.location.pathname.indexOf("inicio.html

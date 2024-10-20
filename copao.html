@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+  <title>FEDelivery's   
+ - Compre em um Toque!</title>
+  <meta name="description"
+    content="Explore nosso catálogo interativo e encontre produtos incríveis. Compre com apenas um toque!">
+  <meta property="og:title" content="Catálogo de Produtos Incríveis" />
+  <meta property="og:description" content="Explore nosso catálogo e encontre produtos incríveis." />
+  <meta property="og:image" content="URL_DA_SUA_IMAGEM_AQUI" />
+  <meta name="keywords" content="delivery, comida, bebida, catálogo, online">
+  <meta name="author" content="Seu Nome ou Empresa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin:   
+ 0;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: linear-gradient(90deg, #ff3131, #ff914d);
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      /* Remove a margem superior */
+      position: relative;
+      /* Adicionei para posicionar o botão */
+    }
+
+    iframe {
+      display: block;
+      width: 90%;
+      max-width: 900px;
+      min-width: 300px;
+      height: calc(100% - 40px);
+      /* Ajustei a altura */
+      border: none;
+      overflow: hidden;
+      margin-top: 30px;
+      /* Adicionei margem superior */
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        width: 100%;
+      }
+    }
+
+    /* Estilo para o botão */
+    #botao-inicio {
+      position: absolute;
+      top: 1px;
+      left: 3px;
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 3px 8px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 101;
+      /* Garante que o botão fique acima do iframe */
+    }
+
+    #botao-inicio:hover {
+      background-color: #ff3131;
+    }
+
+    /* Removi o estilo do nav */
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <iframe src="https://drive.google.com/file/d/1HMPYmKtCq4A7MeJSzA_swNsd_1nceFhy/preview" width="640" height="480" allow="autoplay"></iframe>
+    <button id="botao-inicio" onclick="window.location.href='inicio.html'">INÍCIO</button>
+  </main>
+
+  <script>
+    // Removi a função adicionarMenu()
+
+  </script>
+</body>
+
+</html>
